@@ -15,7 +15,7 @@ export default function RootLayout ({ children }: { children: React.ReactNode })
     <html lang="en">
       <body className={inter.className}>
 
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           {children}
         </ThemeProvider>
 

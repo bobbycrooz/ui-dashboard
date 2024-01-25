@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
+
+@import "theme";
+@import "utils";
+
+body {
+	overflow: hidden;
+	font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.barbg {
+	border-radius: 20px 20px 0px 0px;
+	background: linear-gradient(180deg, #34caa5 0%, rgba(52, 202, 165, 0) 100%);
+}

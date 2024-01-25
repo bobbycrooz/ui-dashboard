@@ -1,12 +1,15 @@
-// "use client";
+"use client";
 
 import { Icons } from "@/components/icons";
 import { cn } from "@/lib/utils";
+import { useTheme } from "next-themes";
 
 export function Sidebar () {
+  const { setTheme } = useTheme();
+
   return (
     <>
-      <section className="hidden md:flex w-20 h-full bg-sidebar-bg py-5 border-r border-sidebar-border flex-col justify-between">
+      <section className="hidden md:flex w-20 h-full bg-sidebar-bg py-5 border-r border-sidebar-border flex-col justify-between dark:border-neutral-600">
         <div className="">
           <Icons.Logo className="mx-auto" />
 
@@ -22,9 +25,9 @@ export function Sidebar () {
               ))
             }
 
-            <div className="toggle-trigger w-[46px] h-[92px] mx-auto  p-2 bg-background rounded-[100px] flex flex-col items-center justify-between">
-              <Icons.light />
-              <Icons.dark />
+            <div className="toggle-trigger w-[46px] h-[92px] mx-auto  p-2 bg-background rounded-[100px] flex flex-col items-center justify-between dark:bg-neutral-950">
+              <Icons.light onClick={() => setTheme("light")} />
+              <Icons.dark  onClick={() => setTheme("dark")}/>
             </div>
           </nav>
         </div>

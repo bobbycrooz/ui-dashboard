@@ -69,7 +69,7 @@ export function DataTable ()
       <div>
         <Table>
           <TableHeader className="">
-            <TableRow className="border-b border-sidebar-border">
+            <TableRow className="border-b border-sidebar-border dark:border-neutral-600">
               <TableHead className="text-[#9CA4AB] font-medium">Name</TableHead>
               <TableHead className="text-[#9CA4AB] font-medium">Date</TableHead>
               <TableHead className="text-[#9CA4AB] font-medium">Amount</TableHead>
@@ -80,7 +80,7 @@ export function DataTable ()
 
           <TableBody>
             {tabeData.map(({ name, date, amount, status, id }, index) => (
-              <TableRow key={index} className="border-b border-sidebar-border">
+              <TableRow key={index} className="border-b border-sidebar-border dark:border-neutral-600">
                 <TableCell className="">
                   <div className="w-full space-x-5 flex items-center">
                     <Image src={id} alt="dp" width={32} height={32}/>

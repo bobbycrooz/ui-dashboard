@@ -21,9 +21,9 @@ export function AvatarBtn () {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <div className="w-auto border border-[#DADDDD] rounded-[28px] p-[6px] flex space-x-3 items-center">
+        <div className="w-auto border border-[#DADDDD] rounded-[28px] p-[6px] flex space-x-3 items-center dark:border-neutral-600">
           <div className="w-auto flex items-center">
-            <div className="rounded-full w-[38px] h-[38px] bg-neutral-400">
+            <div className="rounded-full w-[38px] h-[38px] bg-neutral-400 dark:border-neutral-600">
               <Image src={"/dp.png"} width={38} height={38} alt="dp"/>
             </div>
 
@@ -34,7 +34,7 @@ export function AvatarBtn () {
           </div>
 
           <span className="add_icon">
-            <Icons.carretDown />
+            <Icons.carretDown className="fill-[#0D062D] dark:fill-neutral-600"/>
           </span>
         </div>
       </DropdownMenuTrigger>

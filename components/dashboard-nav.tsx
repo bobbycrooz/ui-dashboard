@@ -5,7 +5,7 @@ import { Icons } from "@/components/icons";
 
 export function DashboardNav () {
   return (
-    <nav className="w-screen md:w-full bg-background min-h-[88px] sticky top-0 left-0 px-5 py-[18px] flex items-center justify-between border-b border-sidebar-border z-10">
+    <nav className="w-screen md:w-full bg-background min-h-[88px] sticky top-0 left-0 px-5 py-[18px] flex items-center justify-between border-b border-sidebar-border z-10 dark:bg-neutral-900 dark:border-neutral-600">
 
       <div className="flex items-center justify-between md:min-w-[810px]">
         <p className="font-semibold text-xl">
@@ -19,22 +19,22 @@ export function DashboardNav () {
             </svg>
           </div>
 
-          <input type="text" name="" id="" className="bg-wite border border-[#DADDDD] rounded-3xl text-neutral-400 h-full pl-11 placeholder:text-neutral-400 w-full" placeholder="Search..."/>
+          <input type="text" name="" id="" className="bg-wite border border-[#DADDDD] rounded-3xl text-neutral-400 h-full pl-11 placeholder:text-neutral-400 w-full dark:bg-neutral-800 dark:border-neutral-600" placeholder="Search..."/>
         </div>
       </div>
 
       <div className="flex items-center  justify-between md:w-[500px]">
         <div className="date space-x-3 md:flex items-center hidden">
           <div className="px-4 py-3 flex items-center">
-            <Icons.calender/>
+            <Icons.calender  className="dark:stroke-neutral-500"/>
 
             <p className="text-foreground ml-2 font-medium font-inter text-sm">
             November 15, 2023
             </p>
           </div>
 
-          <div className="w-10 h-10 centered border rounded-full">
-            <Icons.bell/>
+          <div className="w-10 h-10 centered border rounded-full dark:border-neutral-600">
+            <Icons.bell className="dark:stroke-neutral-500"/>
           </div>
         </div>
 

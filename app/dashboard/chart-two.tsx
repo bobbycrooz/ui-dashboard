@@ -38,7 +38,7 @@ export const options = {
     y: {
       border: { display: false },
 
-      grid: { color: "#EAEAEA", lineWidth: 0.8, tickBorderDash: [1, 1], borderDash: [4, 4] }
+      grid: { color: "#EAEAEA8a", lineWidth: 0.8, tickBorderDash: [1, 1], borderDash: [4, 4] }
     }
   }
 };
